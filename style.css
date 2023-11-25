@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500, 600, 700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+    overflow-x: hidden;
+
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+}
+.banner .content{
+    width: 900px;
+    text-align: center;
+}
+.banner .content h1{
+    font-size: 4rem;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 0.8rem;
+    color: #fff;
+}
+.btn{
+    text-decoration: none;
+    background-color:rgba(255, 0, 0, 0.5);
+    margin-top: 20px;
+    padding: 2px 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius:3px;
+    transition: 0.5s;
+    color: #fff;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 110px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+}
+header .logo span{
+    color: red;
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: 0.5s;
+    background-color: transparent;
+}
+header .nav li a:hover{
+    background-color:rgba(255, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+header.sticky .nav li a{
+    color: #111;
+    transition: 0.5s;
+}
+header.sticky .nav li a:hover{
+    color: #fff;
+}
+.menuToggle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(./images/menu.png); 
+    background-size: cover;
+    cursor: pointer;
+    display: none; 
+}
+
+section{
+    width: 100%;
+    padding:150px 35px;
+}
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.col50 img{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}
+.titleText{
+    color: #111;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.titleText span{
+    color: red;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+.imgcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+.imgcontainer .box{
+    text-align: center;
+}
+.imgcontainer .box img{
+    width: 300px;
+    border-radius: 5px;
+}
+.imgcontainer .box h3{
+    font-weight: 300;
+}
+.title .title .btn{
+    text-decoration: none;
+    background-color:red;
+    margin-top: 20px;
+    padding: 2px 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius:3px;
+    transition: 0.5s;
+    color: #fff;
+}
+.imgcontainer2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+.imgcontainer2 .box{
+    text-align: center;
+}
+.imgcontainer2 .box img{
+    width: 250px;
+    border-radius: 5px;
+}
+.imgcontainer2 .box h3{
+    font-weight: 300;
+}
+.imgcontainer3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+.imgcontainer3 .box{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+.imgcontainer3 .box img{
+    width: 100px;
+    border-radius: 50px;
+}
+.testimonials{
+    background-image: url('./images/bg2.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.testimonials .title .titleText,.exp{
+    color: #fff;
+}
+.contact{
+    background-image: url('./images/bg3.jpg');
+    background-size: cover;
+}
+.contact .box{
+    margin-top: 50px;
+    padding: 10px 10px 10px 10px;
+    width: 35%;
+    box-shadow:0 4px 8px 0 rgba(122, 122, 122, 0.2), 0 6px 20px 0 rgba(221, 220, 220, 0.19);
+}
+.contact .box h4{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.contact .box .input{
+    position: relative;
+    width:100%;
+    margin-bottom: 20px;
+}
+.contact .box .input input{
+    width: 80%;
+    padding-right: 10px;
+    color: #c4c4c4;
+}
+.contact .box .input input[type="submit"]{
+    width: 20%;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+}
+.contact .box .input input[type="text"]{
+    padding-left: 5px;
+}
+.contact .box .input textarea{
+    padding-left: 5px;
+}
+.contact .box .input input[type="submit"]{
+    width: 20%;
+    text-align: center;
+    color: #c4c4c4;
+    padding-left: 5px;
+    background-color:rgba(255, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.contact .box .input input[type="submit"]:hover{
+    background-color: red;
+    letter-spacing: 1px;
+}
+
+.Copyrighttext{
+    padding: 1px 1px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    color: #777777;
+}
+@media (max-width:991px){
+
+
+    header .logo {
+        text-align: center;
+    }
+    
+    header .menuToggle {
+        display: block;
+    }
+    
+    header .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    header .nav.active {
+        display: flex;
+    }
+    
+    header.sticky .menuToggle {
+        background-color: #333;
+        background: url(./images/menublack.png);
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        z-index: 2;
+    }
+    header.sticky .nav{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    header .navigation li {
+        margin: 10px 0;
+    }
+    
+    header .nav li a {
+        color: #fff;
+    }
+    
+    
+
+    header{
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .col50{
+        width: 100%;
+    }
+    .col50 .imgbx{
+        width:90%;
+    }
+    section{
+       padding: 50px 35px;
+    }
+
+    .imgcontainer{
+        display: grid;
+        grid-template-columns: auto auto ;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer .box{
+        text-align: center;
+    }
+    .imgcontainer .box img{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .imgcontainer .box h3{
+        font-weight: 300;
+    }
+
+
+    .imgcontainer2{
+        display: grid;
+        grid-template-columns: auto auto ;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer2 .box{
+        text-align: center;
+    }
+    .imgcontainer2 .box img{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .imgcontainer2 .box h3{
+        font-weight: 300;
+    }
+
+    
+    .imgcontainer3{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer3 .box{
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .imgcontainer3 .box img{
+        width: 100px;
+        border-radius: 50px;
+    }
+    .contact .box{
+        width: 100%;
+    }
+    .contact .box .input{
+        width: 40%;
+    }
+    .contact .box .input input[type="submit"]{
+        width: 30%;
+        text-align: center;
+        color: white;
+        padding-left: 5px;
+    }
+}
+@media (max-width:500px){
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .col50{
+        width: 100%;
+    }
+    .col50 .imgbx{
+        width:50%;
+    }
+
+    .col50 img{
+        width: 300px;
+    }
+    section{
+       padding: 50px 35px;
+    }
+
+    .imgcontainer{
+        display: grid;
+        grid-template-columns: auto  ;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer .box{
+        text-align: center;
+    }
+    .imgcontainer .box img{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .imgcontainer .box h3{
+        font-weight: 300;
+    }
+
+
+    .imgcontainer2{
+        display: grid;
+        grid-template-columns: auto ;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer2 .box{
+        text-align: center;
+    }
+    .imgcontainer2 .box img{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .imgcontainer2 .box h3{
+        font-weight: 300;
+    }
+
+    
+    .imgcontainer3{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .imgcontainer3 .box{
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .imgcontainer3 .box img{
+        width: 100px;
+        border-radius: 50px;
+    }
+    .contact .box{
+        width: 100%;
+    }
+    .contact .box .input{
+        width: 80%;
+    }
+    .contact .box .input input[type="submit"]{
+        width: 60%;
+        text-align: center;
+        color: white;
+        padding-left: 5px;
+    }
+    
+
+}
